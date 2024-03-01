@@ -4,15 +4,15 @@ class RapidTestOrder {
       WELCOMING: () => {
         let aReturn = [];
         this.stateCur = this.OrderState.SIZE;
-        aReturn.push("Welcome to Fratello's.");
-        aReturn.push("What size of the best pizza in Waterloo would you like?");
+        aReturn.push("Welcome to Admiral Submarine.");
+        aReturn.push("Would you like a 6inch or 12inch sub?");
         return aReturn;
       },
       SIZE: () =>{
         let aReturn = [];
         this.stateCur = this.OrderState.RESERVING;
-        aReturn.push("What toppings would you like?"); 
-        aReturn.push("We have Canadian and Vegitarian");
+        aReturn.push("What type of sub would like?"); 
+        aReturn.push("We have meatball subs, pizza subs, cold cut subs, or vegetarian subs.");
         return aReturn;
       },
       RESERVING: (sInput) => {
